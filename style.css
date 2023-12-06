@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --mediumGray: hsl(0, 0%, 41%);
+  --almostBlack: hsl(0, 0%, 8%);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  color: var(--mediumGray);
+  font-weight: 500;
+}
+button {
+  font-family: "Epilogue", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--almostWhite);
+  padding: 2vw;
+  position: relative;
+}
+
+header {
+  height: 10vh;
+}
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+nav .left ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2vw;
+}
+
+nav .left ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  position: relative;
+}
+nav .left ul li a,
+nav .left ul li img {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--mediumGray);
+transition: all ease-in-out 0.3s;
+}
+
+nav .right {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.login {
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+
+}
+.login:hover{
+    color: var(--almostBlack);
+}
+
+
+.register {
+    cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid var(--mediumGray);
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 0.8vw 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.register:hover{
+    border: 2px solid var(--almostBlack);
+    color: var(--almostBlack);
+}
+nav .left ul li:hover a{
+color: var(--almostBlack);
+}
+
+nav .left ul li:hover img{
+transform: rotate(180deg);
+}
+nav .dropdown1 {
+  position: absolute;
+  background-color: var(--almostWhite);
+  box-shadow: 2px 2px 15px var(--mediumGray);
+  padding: 1vw 2vw;
+  border-radius: 12px;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  top: 20px;
+  left: -70px;
+  
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.itemtext {
+  font-size: 14px;
+  color: var(--mediumGray);
+}
+.features:hover .dropdown1{
+    display: flex;
+}
+
+nav .dropdown2{
+    position: absolute;
+    background-color: var(--almostWhite);
+    box-shadow: 2px 2px 15px var(--mediumGray);
+    padding: 1vw 2vw;
+    border-radius: 12px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    text-wrap: nowrap;
+    top: 20px;
+    transition: all ease-in-out 0.3s;
+}
+.company{
+    transition: all ease-in-out 0.3s;
+
+}
+.company:hover .dropdown2{
+    display: flex;
+}
+.heroSection {
+  margin-top: 30px;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.heroSection .left {
+  height: 100%;
+  width: 60%;
+  padding-left: 10vw;
+  /* border: 2px solid lawngreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: start;
+}
+h1 {
+  font-size: 4rem;
+  color: var(--almostBlack);
+  font-weight: 700;
+}
+p {
+  font-size: 18px;
+  line-height: 20px;
+}
+#learnmore {
+  padding: 1vw 2vw;
+  background-color: var(--almostBlack);
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: var(--almostWhite);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+}
+#learnmore:hover{
+    background-color: transparent;
+    color: var(--almostBlack);
+    border-color: var(--almostBlack);
+}
+.imgrow {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--mediumGray);
+}
+.heroSection .right {
+  height: 100%;
+  width: 40%;
+  /* border:2px solid orangered; */
+  background-image: url(./images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* background-attachment: fixed; */
+}
+
+#menu{
+  display: none;
+}
+
+.menubar{
+  
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  box-shadow: 2px 2px 15px black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 29vw 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+  /* display: none; */
+}
+
+#closemenu{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 999;
+}
+.menubar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2vw;
+  flex-direction: column;
+}
+
+.menubar  li {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  position: relative;
+}
+.menubar ul li a,
+.menubar li img {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--mediumGray);
+transition: all ease-in-out 0.3s;
+}
+.menubar .dropdown1 {
+  position: relative;
+  height: 125px;
+  /* background-color: var(--almostWhite); */
+  padding: 1vw 2vw;
+  margin-bottom: 100px;
+  border-radius: 12px;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  top: 120px;
+  left: -50px;
+  
+}
+
+.menubar .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.menubar .itemtext {
+  font-size: 14px;
+  color: var(--mediumGray);
+}
+.features:hover .dropdown1{
+    display: flex;
+}
+
+.menubar .dropdown2{
+    position: relative;
+    padding: 1vw 2vw;
+    border-radius: 12px;
+    z-index: 2;
+    display: none;
+    margin-bottom: 70px;
+    
+    flex-direction: column;
+    gap: 10px;
+    text-wrap: nowrap;
+    top: 80px;
+    left: -50px;
+    transition: all ease-in-out 0.3s;
+}
+.menubar .company{
+    transition: all ease-in-out 0.3s;
+
+}
+.menubar .company:hover .menubar .dropdown2{
+    display: flex;
+}
+
+.menubar .right{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width:990px) {
+    .heroSection .right{
+      /* background-size: 80%; */
+      
+    }
+    h1{
+      font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .heroSection .right{
+      background-size: 100%;
+      
+    }
+    h1{
+      font-size: 3rem;
+    }
+}
+@media screen and (max-width:600px) {
+  
+  nav .left ul, nav .right{
+    display: none;
+  }
+  #menu{
+    display: block;
+  }
+
+  .heroSection .right{
+      background-size: 100%;
+      
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:520px) {
+  header{
+    padding: 0 20px;
+  }
+  #learnmore{
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  .main{
+    padding: 20px 0;
+  }
+  nav .left ul, nav .right{
+    display: none;
+  }
+  #menu{
+    display: block;
+  }
+
+  .heroSection{
+    flex-direction: column-reverse;
+  }
+  .heroSection .left{
+    height: 50%;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .heroSection .right{
+    height: 50%;
+    background-image: url(./images/image-hero-mobile.png);
+    width: 100%;
+  }
+  .imgrow{
+    margin-top: 0px;
+  }
+  .imgrow img{
+    height: 20px;
+  }
+  p{
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+
+
+@media screen and (max-width:400px) {
+  
+  nav .left ul, nav .right{
+    display: none;
+  }
+  .login,.register{
+    padding: 10px 20px;
+  }
+  #menu{
+    display: block;
+  }
+
+  .heroSection{
+    flex-direction: column-reverse;
+  }
+  .heroSection .left{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .heroSection .right{
+    height: 50%;
+    background-image: url(./images/image-hero-mobile.png);
+    width: 100%;
+  }
+  .imgrow{
+    margin-top: 0px;
+  }
+  .imgrow img{
+    height: 15px;
+  }
+}
+
+
+

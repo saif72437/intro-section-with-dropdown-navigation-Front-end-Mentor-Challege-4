@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="main">
+   <div class="menubar">
+    <img id="closemenu" alt="error" src="./images/icon-close-menu.svg">
+    <ul>
+      <li class="features">
+        <a href="#">Features</a>
+        <img src="./images/icon-arrow-down.svg" alt="error">
+      
+        <div class="dropdown1">
+          <div class="item">
+            <img src="./images/icon-todo.svg" alt="error">
+            <p class="itemtext">Todo List</p>
+          </div>
+          <div class="item">
+            <img src="./images/icon-calendar.svg" alt="error">
+            <p class="itemtext">Calendar</p>
+          </div>
+          <div class="item">
+            <img src="./images/icon-reminders.svg" alt="error">
+            <p class="itemtext">Reminder</p>
+          </div>
+          <div class="item">
+            <img src="./images/icon-planning.svg" alt="error">
+            <p class="itemtext">Plainning</p>
+          </div>
+        </div>
+      </li>
+      <li class="company">
+        <a href="#">Company</a>
+        <img src="./images/icon-arrow-down.svg" alt="error">
+        <div class="dropdown2">
+            <div class="itemtext">History</div>
+            <div class="itemtext">Our Team</div>
+            <div class="itemtext">Blog</div>
+        </div>
+      
+      </li>
+      <li>
+        <a href="#">Careers</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+    </ul>
+
+    <div class="right">
+      <button class="login">Login</button>
+      <button class="register">Register</button>
+    </div>
+  </div>
+
+    <header>
+      <nav>
+        <div class="left">
+          <img src="./images/logo.svg" id="logo" alt="error">
+          <ul>
+            <li class="features">
+              <a href="#">Features</a>
+              <img src="./images/icon-arrow-down.svg" alt="error">
+            
+              <div class="dropdown1">
+                <div class="item">
+                  <img src="./images/icon-todo.svg" alt="error">
+                  <p class="itemtext">Todo List</p>
+                </div>
+                <div class="item">
+                  <img src="./images/icon-calendar.svg" alt="error">
+                  <p class="itemtext">Calendar</p>
+                </div>
+                <div class="item">
+                  <img src="./images/icon-reminders.svg" alt="error">
+                  <p class="itemtext">Reminder</p>
+                </div>
+                <div class="item">
+                  <img src="./images/icon-planning.svg" alt="error">
+                  <p class="itemtext">Plainning</p>
+                </div>
+              </div>
+            </li>
+            <li class="company">
+              <a href="#">Company</a>
+              <img src="./images/icon-arrow-down.svg" alt="error">
+              <div class="dropdown2">
+                  <div class="itemtext">History</div>
+                  <div class="itemtext">Our Team</div>
+                  <div class="itemtext">Blog</div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+        <img id="menu" src="./images/icon-menu.svg" alt="error">
+      </nav>
+
+    </header>
+
+    <div class="heroSection">
+
+      <div class="left">
+        <h1>
+          Make 
+          remote work
+        </h1>
+        <p> Get your team in sync, no matter your location. <br> Streamline processes, 
+          create team rituals, and <br> watch productivity soar.
+        </p>
+        <button id="learnmore">Learn more</button>
+        <div class="imgrow">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <!-- <img src="./images/image-hero-mobile.png" alt=""> -->
+      </div>
+    </div>
+
+    
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/saifullah72437">Saifullah Khan</a>.
+ </div> -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="script.js"></script>
+</body>
+</html>
